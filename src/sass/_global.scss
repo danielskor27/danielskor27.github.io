@@ -80,14 +80,15 @@ ul, li {
     display: inline-block;
     text-align: right;
     
-    &__head {
-        padding-right: 10px;
-        font-size: 40px;
-        font-weight: 800;
-        text-transform: uppercase;
-        span {
-            font-weight: 100;
-        }
+    
+}
+.subtitle__head {
+    padding-right: 10px;
+    font-size: 40px;
+    font-weight: 800;
+    text-transform: uppercase;
+    span {
+        font-weight: 100;
     }
 }
 .btn {
