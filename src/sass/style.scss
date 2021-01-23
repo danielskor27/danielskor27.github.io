@@ -1,0 +1,11 @@
+@import '../../node_modules/bootstrap/scss/bootstrap-reboot.scss';
+@import '../../node_modules/animate.css/animate.css';
+
+@import 'src/sass/fonts';
+@import 'src/sass/libs';
+@import 'src/sass/vars';
+@import 'src/sass/global';
+
+// Блоки
+@import 'blocks/header/header';
+@import 'blocks/surf/surf';

@@ -1,0 +1,126 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    background-color: #171919;
+    color: #fff;
+}
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+.headline-left {
+    font-size: 22px;
+    line-height: 32px;
+    color: #ffffff;
+    letter-spacing: 7.33px;
+    text-transform: uppercase;
+    opacity: 0.5;
+    padding-left: 103px;
+    position: relative;
+    display: inline-block;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 80px;
+        height: 1px;
+        background-color: #fff;
+        left: 0;
+        top: 50%;
+    }
+}
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.title {
+    span {
+        display: inline-block;
+        font-size: 200px;
+        color: rgba(#fff, 0.02);
+        font-weight: 800;
+        line-height: 230px;
+        position: relative;
+        text-transform: uppercase;
+        transform: translateX(-50px);
+    }
+    h3 {
+        position: absolute;
+        top: 0;
+        right: -15px;
+        margin: 0;
+        color: #fff;
+        font-size: 80px;
+        line-height: 80px;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 80px;
+            height: 1px;
+            background-color: #4AF6CD;
+        } 
+    }
+}
+.subtitle {
+    display: inline-block;
+    text-align: right;
+    
+    &__head {
+        padding-right: 10px;
+        font-size: 40px;
+        font-weight: 800;
+        text-transform: uppercase;
+        span {
+            font-weight: 100;
+        }
+    }
+}
+.btn {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 36px;
+    margin-left: 19px;
+    text-transform: uppercase;
+    color:#fff;
+    span {
+        padding: 17px 57px 15px 17px;
+        background-color: #4AF6CD;
+        display: inline-block;
+        margin-left: 19px;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 1px;
+            background-color: #fff;
+            top: 50%;
+            left: -10px;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 21px;
+            background-image: url('../icons/arrow_right.svg');
+            top: 50%;
+            right: 17px;
+            transform: translateY(-50%);
+        }
+    }
+}
