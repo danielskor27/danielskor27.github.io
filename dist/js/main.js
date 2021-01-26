@@ -29,4 +29,10 @@ $(function(){
         asNavFor: '.surf-slider',
         focusOnSelect: true,
     });
+    $('.travel__slider').slick({
+        infinite: true,
+        fade: true,
+        prevArrow: '<img class="slider-arrows slider-arrows__right" src="icons/arrow_left.svg">',
+        nextArrow: '<img  class="slider-arrows slider-arrows__left" src="icons/arrow_right.svg" alt="arrow">',
+    });
 });
