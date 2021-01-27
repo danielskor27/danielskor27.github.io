@@ -1,5 +1,5 @@
-.travel {
-    padding: 160px 0 120px;
+.holder {
+    // padding: 160px 0 120px;
     background-image: url(../img/cocktail.png);
     background-position: bottom right;
     background-repeat: no-repeat;
@@ -8,7 +8,7 @@
         opacity: 0.5;
     }
 }
-.travel__slider {
+.holder__slider {
     &-head {
         background-repeat: no-repeat;
         background-position: top left;
@@ -29,6 +29,19 @@
                 right: 0;
                 top: 0;
             }
+            .holder__star-list {
+                position: absolute;
+                right: 0;
+                top: 0;
+                li {
+                    display: inline-block;
+                    padding-right: 11px;
+                }
+                img{
+                    position: static;
+                    
+                }
+            }
         }
     }
     &-subtitle {
@@ -40,7 +53,7 @@
         margin-bottom:311px;
     }
 }
-.travel__slider-info {
+.holder__slider-info {
         display: flex;
         justify-content: space-around;
         &-item{
@@ -70,7 +83,7 @@
             line-height: 36px;
             text-transform: uppercase;
             padding-left: 40px;
-            span {
+            .holder__slider-span {
                 position: absolute;
                 font-size: 14px;
                 text-align: right;
@@ -78,7 +91,7 @@
                 text-transform: uppercase;
                 opacity: 0.75;
                 font-weight: 400;
-                bottom: 70px;
+                bottom: 135px;
                 right: 0;
                 white-space: nowrap;
             }
